@@ -1,6 +1,6 @@
 # Random Quotes / qUOTES
 
-- **[VISIT/CHECK LIVE](https://alezayn.github.io/Random-Quotes/)** 🔗
+**[VISIT/CHECK LIVE](https://alezayn.github.io/Random-Quotes/)** 🔗
 
 A simple web project using HTML5, CSS3, and JavaScript especially DOM practice including REST API.
 
