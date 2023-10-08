@@ -1,0 +1,308 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Questrial&family=Roboto+Mono:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #ffff00;
+  --accent-color: #666;
+  --text-color: #333;
+  --font-Questrial: "Questrial", sans-serif;
+  --font-Roboto-Mono: "Roboto Mono", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--font-Roboto-Mono);
+  width: 100%;
+  height: 100vh;
+  background: var(--primary-color);
+  font-size: 24px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  background: none;
+  border: none;
+}
+/* Header */
+header {
+  height: 70px;
+  border-bottom: 0.5px solid var(--accent-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px 10px;
+  position: relative;
+}
+.userWelcome {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  color: var(--text-color);
+  width: 70%;
+  gap: 15px;
+  border-right: 1px solid var(--accent-color);
+}
+.greetings {
+  font-size: 1.2em;
+}
+.displayNav {
+  padding: 5px 0px 0px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Navigations */
+nav {
+  display: none;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: var(--primary-color);
+}
+
+/* -------------------- */
+.logo {
+  margin: 20px 30px 10px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+}
+/* -------------------- */
+
+.hideNav {
+  float: right;
+  height: 40px;
+  background-color: var(--text-color);
+  margin: 20px 30px 10px;
+  cursor: pointer;
+}
+/* ------------------ */
+.navItems {
+  margin-top: 50px;
+  color: var(--text-color);
+  font-family: var(--font-Questrial);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  /* -------------- */
+  .navLink {
+    font-size: 1.4rem;
+    padding: 30px 20px;
+    margin: 0.5px 0px;
+    cursor: pointer;
+    border-bottom: 0.5px solid rgb(224, 223, 223);
+  }
+  .navLink > span > a {
+    font-size: 0.5rem;
+    margin-left: 20px;
+    font-family: var(--font-Roboto-Mono);
+    color: var(--text-color);
+  }
+  .arrow {
+    width: 12px;
+  }
+  .navLink:nth-child(1):hover {
+    background-color: #0077b5;
+    color: var(--primary-color);
+    transition: 1s all ease-in-out;
+  }
+
+  .navLink:nth-child(2):hover {
+    background-color: #5865f2;
+    color: var(--primary-color);
+    transition: 1s all ease-in-out;
+  }
+  .navLink:nth-child(4):hover {
+    background-color: var(--secondary-color);
+    transition: 0.1s all ease-in-out;
+  }
+  .navLink:nth-child(4) {
+    position: relative;
+
+    /* ---------- */
+    .childNav {
+      display: none;
+      background: none;
+      position: absolute;
+      top: 0;
+      transform: translateX(25%);
+      font-size: 0.5rem;
+      & a {
+        background-color: var(--primary-color);
+        padding: 5px 20px;
+        font-weight: 400;
+        color: var(--text-color);
+        font-family: var(--font-Roboto-Mono);
+        margin: 0px 5px;
+      }
+    }
+  }
+}
+/* ---------- */
+.apiUses {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px 20px 0px;
+  opacity: 0.4;
+  font-size: 0.7rem;
+  text-decoration: underline;
+  cursor: pointer;
+  & .arrowApi {
+    margin-left: 5px;
+    width: 25px;
+  }
+}
+
+/* Main  */
+main {
+  height: calc(100% - 70px);
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* ----------- */
+.apiSection {
+  width: 800px;
+  .author {
+    float: right;
+    font-size: 0.7rem;
+    font-weight: 700;
+    font-family: var(--font-Questrial);
+  }
+
+  .apiBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 50px 0px;
+
+    .nextQuote,
+    .copy {
+      background-color: var(--secondary-color);
+      padding: 13px 39px;
+      box-shadow: 5px 8px var(--text-color);
+      border: 1px solid var(--text-color);
+      font-family: var(--font-Roboto-Mono);
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+}
+
+/* --------------- */
+.imgSection {
+  position: absolute;
+  right: 5%;
+  transform: translateX(30%);
+  & .tryImg {
+    width: 300px;
+    height: 400px;
+  }
+  .imgTop {
+    transform: rotate(10deg);
+    box-shadow: 5px 8px var(--secondary-color);
+  }
+  .imgBottom {
+    transform: rotate(10deg);
+    position: relative;
+    z-index: -1;
+  }
+}
+
+/* For responsive Screen need to hide images */
+@media (max-width: 967px) {
+  .imgSection {
+    display: none;
+  }
+  .imgDOM {
+    display: none;
+  }
+  .apiBtn > button {
+    font-size: 0.7rem !important;
+    font-weight: 700;
+  }
+}
+
+/* logIn */
+.logIn {
+  display: none;
+}
+.logInShow {
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginForm {
+  width: 400px;
+  border: 0.5px solid var(--accent-color);
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+.formImg {
+  width: 50px;
+}
+.info {
+  font-size: 1rem;
+  margin: 40px 10px 2px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.form {
+  margin: 30px 10px;
+}
+.form > label {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.form > input {
+  outline: none;
+  line-height: 15px;
+  padding: 10px;
+  margin-top: 30px;
+  width: 100%;
+  border: none;
+  border: 0.5px solid var(--accent-color);
+  font-family: var(--font-Roboto-Mono);
+  font-weight: 700;
+  color: var(--accent-color);
+}
+.formBtn > button {
+  background-color: var(--secondary-color);
+  padding: 10px 30px;
+  box-shadow: 3px 5px var(--text-color);
+  border: 1px solid var(--text-color);
+  font-family: var(--font-Roboto-Mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ------------------ */
+/* This code is for you! You can change destroy or even sell it. Just be happy.😉 */

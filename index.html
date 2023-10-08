@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="developer" content="Ali Zain" />
+    <!-- LINKEDIN : https://www.linkedin.com/in/al%C3%ACzain/  -->
+    <meta
+      name="description"
+      content="Random Quotes generator web app For Dom practice."
+    />
+    <!-- StyleSheet / FavIcon -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="shortcut icon" href="images/favIcon.png" type="image/x-icon" />
+    <title>Random Quotes</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- User_Welcome -->
+      <div class="userWelcome">
+        <h2 class="greetings">Hello_</h2>
+        <p class="displayUserName"></p>
+      </div>
+
+      <div class="navIcon">
+        <button>
+          <img
+            src="images/show_nav.png"
+            alt="navigation Icon"
+            class="displayNav"
+          />
+        </button>
+      </div>
+    </header>
+
+    <!-- Hey! If you are reviewing code and thinking about why I didn't put Nav in
+    header according to semantic tag, So I am giving a short ans: 
+    Ans: I get this idea from Awwward's website where people are trying to do some magic on
+    web Design, I tried, As a beginner I get just this solution from my
+    knwoledge. Now don't change it Thanks. -->
+    <!-- Navigation -->
+    <nav class="nav">
+      <!-- Attention again:
+        First I forget to add button tag on this icon, added all style functionallity. Then I thought about semantic but after adding it was destroying the icon's style. I removed again, If you can handle it, you can add.
+       -->
+      <img src="images/hide_nav.png" alt="navigation Icon" class="hideNav" />
+
+      <p class="logo">qUOTES</p>
+      <ul class="navItems">
+        <li class="navLink">
+          <span> / LinkedIn </span>
+
+          <span
+            ><a href="https://www.linkedin.com/in/al%C3%ACzain/" target="_blank"
+              ><span class="additional_Info"
+                >Follow on LinkedIn
+                <img src="images/arrow.png" alt="" class="arrow" /> </span></a
+          ></span>
+        </li>
+        <li class="navLink">
+          / Discord
+          <span
+            ><a
+              href="https://discord.com/users/880574885263441941"
+              target="_blank"
+            >
+              <span class="additional_Info"
+                >Let's chat on Discord
+                <img src="images/arrow.png" alt="" class="arrow" />
+              </span> </a
+          ></span>
+        </li>
+        <li class="navLink">
+          / Github
+          <span
+            ><a href="https://github.com/AleZayn" target="_blank"
+              ><span class="additional_Info diff_child"
+                >Visit if you need code
+                <img src="images/arrow.png" alt="" class="arrow" /> </span></a
+          ></span>
+        </li>
+        <li class="navLink learn">
+          / Learn
+          <div class="childNav">
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"
+              >/ JS
+              <img src="images/arrow.png" alt="" class="arrow" />
+            </a>
+            <a href="https://www.awwwards.com/" target="_blank"
+              >/ Design
+              <img src="images/arrow.png" alt="" class="arrow" />
+            </a>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Api refence link -->
+      <div class="apiUses">
+        <a href="https://github.com/lukePeavey/quotable" target="_blank"
+          >Visit Quotes Api</a
+        >
+        <img src="images/arrow.png" alt="" class="arrowApi" />
+      </div>
+    </nav>
+
+    <!-- Main Sturcture (Api's data plus images) -->
+
+    <main>
+      <!-- Api_Data -->
+      <section class="apiSection">
+        <p class="apiResponse"></p>
+        <p class="author"></p>
+        <div class="apiBtn">
+          <button class="copy">Copy</button>
+          <button class="nextQuote">See Next</button>
+        </div>
+      </section>
+      <section class="imgSection">
+        <img src="" alt="artImg" class="imgTop tryImg imgDOM" />
+        <img src="" alt="artImg" class="imgBottom tryImg imgDOM" />
+      </section>
+
+      <!-- LOG_IN  -->
+      <section class="logIn">
+        <div class="loginForm">
+          <img src="images/favIcon.png" alt="" class="formImg" />
+          <p class="info">Enter your name for access multiple Quotes</p>
+
+          <form class="form">
+            <label for="userName" id="userNameLabel"
+              >Let's Enter Your Nick Name!</label
+            >
+            <input
+              type="text"
+              name="userName"
+              id="userName"
+              class="userNameInput"
+              placeholder="Enter now!"
+            />
+          </form>
+
+          <div class="formBtn">
+            <button class="backBtn">Go Back</button>
+            <button class="submitBtn">Submit</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
