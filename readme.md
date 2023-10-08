@@ -1,6 +1,6 @@
 # Random Quotes / qUOTES
 
-- [VISIT/CHECK LIVE](https://alezayn.github.io/Random-Quotes/) 🔗
+- **[VISIT/CHECK LIVE](https://alezayn.github.io/Random-Quotes/)** 🔗
 
 A simple web project using HTML5, CSS3, and JavaScript especially DOM practice including REST API.
 
@@ -23,8 +23,8 @@ and open the `index.html` file in a web browser.
 
 ## Features
 
-- Feature 1: Created navigation including social media links plus a nav item as a parent and inside it created two child nav.
-- Feature 2: After two quotes, login page will display and ask for user name for giving access to the other quotes and user's name will display with greetings. If user refuse it then user can see it again after two quotes.
+- **Feature 1:** Created navigation including social media links plus a nav item as a parent and inside it created two child nav.
+- **Feature 2:** After two quotes, login page will display and ask for user name for giving access to the other quotes and user's name will display with greetings. If user refuse it then user can see it again after two quotes.
 
 ## Screenshots
 
