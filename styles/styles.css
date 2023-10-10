@@ -239,7 +239,7 @@ main {
     display: none;
   }
   .apiBtn > button {
-    font-size: 0.7rem !important;
+    font-size: 0.6rem !important;
     font-weight: 700;
   }
 }
