@@ -103,18 +103,34 @@ copyBtn.addEventListener("click", () => {
 });
 
 // ------------LOG_IN
-submitBtn.addEventListener("click", () => {
-  displayUserName.textContent = userNameInput.value;
-  logIn.style.display = "none";
-  imgSection.style.display = "block";
-  apiSection.style.display = "block";
-  apiSection.classList.add("imgDOM");
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (userNameInput.value.trim() === "") {
+    alert("--Input required");
 
-  counter = false;
-  nextQuote.addEventListener("click", () => {
-    fetch_API();
-  });
+    // Define the event handler function
+    function clickHandler() {
+      // Remove the event listener
+      submitBtn.removeEventListener("click", clickHandler);
+    }
+
+    // Add the event handler to remove the click event
+    submitBtn.addEventListener("click", clickHandler);
+  } else {
+    // Handle the case when the input is not empty
+    displayUserName.textContent = userNameInput.value;
+    logIn.style.display = "none";
+    imgSection.style.display = "block";
+    apiSection.style.display = "block";
+    apiSection.classList.add("imgDOM");
+
+    counter = false;
+    nextQuote.addEventListener("click", () => {
+      fetch_API();
+    });
+  }
 });
+
 backBtn.addEventListener("click", () => {
   window.location.reload();
 });
