@@ -18,7 +18,7 @@ The most Intresting part of this project is **USER-LOGIN** section. It can displ
 ## Usage
 
 To run this project:
-clone `https://github.com/AleZayn/Random-Quotes.git`,
+clone `https://github.com/alizainaslam/Random-Quotes.git`,
 and open the `index.html` file in a web browser.
 
 ## Features
