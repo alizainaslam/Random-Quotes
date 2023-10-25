@@ -1,6 +1,6 @@
 # Random Quotes / qUOTES
 
-**[VISIT/CHECK LIVE](https://alezayn.github.io/Random-Quotes/)** 🔗
+**[VISIT/CHECK LIVE](https://alizainaslam.github.io/Random-Quotes/)** 🔗
 
 A simple web project using HTML5, CSS3, and JavaScript especially DOM practice including REST API.
 
@@ -32,7 +32,7 @@ and open the `index.html` file in a web browser.
 
 ## Contact Me on LinkedIn
 
-You can connect with me on LinkedIn: [Ali Zain](https://www.linkedin.com/in/al%C3%ACzain/).
+You can connect with me on LinkedIn: [Ali Zain Aslam](https://www.linkedin.com/in/al%C3%ACzain/).
 
 ## Contributing
 
